@@ -1,3 +1,4 @@
+/* Clases generales */
 body{
     background-color: black;
     color:rgb(255, 255, 255);
@@ -9,14 +10,32 @@ article{
     border-bottom: rgb(255, 255, 255) 1px solid;
 }
 
-.resaltado{
-    color: yellow;
-}
-
 #titulo_del_blog{
     text-align: center;
     font-size: 3erm;
 }
+/* Terminan clases generales*/
+
+/* Empieza barras de navegación */
+.resaltado{
+    color: yellow;
+}
+
+nav>ul>li {
+    list-style: none;
+}
+a>li>ul>nav{
+    text-decoration: none;
+}
+/* Termina barra de navegación */
+
+/* Footer del blog */
+#footer_blog{
+    margin: 2rem;
+}
+/* Fin del footer del blog */
+
+/* Ilustraciones */
 .ilustracion{
     border: white 4px solid;
     display: inline-block;
@@ -26,12 +45,4 @@ article{
     margin-left: 1rem;
     font-style: italic;
 }
-#footer_blog{
-    margin: 2rem;
-}
-nav>ul>li {
-    list-style: none;
-}
-a>li>ul>nav{
-    text-decoration: none;
-}
+/* Fin de ilustraciones */
