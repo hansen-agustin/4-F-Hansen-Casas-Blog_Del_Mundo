@@ -6,6 +6,8 @@ body{
 
 article{
     background-color: rgb(44, 43 , 43);
+    padding: 1.5rem;
+    border-bottom: rgb(255, 255, 255) 1px solid;
 }  
 
 .resaltado{
@@ -16,3 +18,21 @@ article{
     text-align: center;
     font-size: 3erm;
 }  
+.ilustracion{
+    border: white 4px solid;
+    display: inline-block;
+}
+.ilustracion figcaption{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-style: italic;
+}
+#footer_blog{
+    margin: 2rem;
+}
+nav>ul>li {
+    list-style:none;
+}
+a>li>ul>nav{
+    text-decoration: none;
+}
