@@ -1,23 +1,38 @@
+/* Clases generales */
 body{
     background-color: black;
     color: rgb(255, 255, 255);
 }
-
-
 article{
     background-color: rgb(44, 43 , 43);
     padding: 1.5rem;
     border-bottom: rgb(255, 255, 255) 1px solid;
 }  
-
-.resaltado{
-    color: yellow;
-} 
-
 #titulo_del_blog{
     text-align: center;
     font-size: 3erm;
-}  
+} 
+/* Terminan clases generales */
+
+/* Empieza barra de navegacion*/
+.resaltado{
+    color: yellow;
+} 
+nav+ul+li {
+    list-style:none;
+}
+a+li+ul+nav {
+    text-decoration: none;
+}
+/* Termina Barra de navegacion */
+
+/* Footer del blog */
+#footer_blog{
+    margin: 2rem;
+}
+/* Fin del footer del blog*/
+
+/* ilustraciones*/
 .ilustracion{
     border: white 4px solid;
     display: inline-block;
@@ -27,12 +42,5 @@ article{
     margin-left: 1rem;
     font-style: italic;
 }
-#footer_blog{
-    margin: 2rem;
-}
-nav>ul>li {
-    list-style:none;
-}
-a>li>ul>nav{
-    text-decoration: none;
-}
+/* fin de ilustraciones*/ 
+
