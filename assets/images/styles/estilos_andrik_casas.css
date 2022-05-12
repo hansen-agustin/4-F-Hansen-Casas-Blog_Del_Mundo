@@ -91,6 +91,7 @@ section{
     grid-auto-rows: auto;
     /* añade un espacio entre los elementos del grid de 3rem */
     gap: 3rem;
+    padding-top: 6rem;
 }
 
 /* Termina grid */
@@ -113,6 +114,7 @@ section>footer{
 }
 nav{
     font-size: 1.3rem;
+    position: fixed;
 }
 nav>ul>li>a:hover{
     text-decoration: underline;
