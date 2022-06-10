@@ -111,14 +111,19 @@ section>footer{
     grid-column: span 12;
 }
 nav{
-
+    
     font-size: 1.3rem;
     position: fixed;
     
 }
 nav>ul>li>a:hover{
+
     text-decoration: underline;
     color: greenyellow;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 nav ul {
     display: grid;
@@ -164,12 +169,15 @@ aside>div>img{
 }
 aside>div{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.6rem;
     border: 1px dashed #fff;
-    margin: 20px;
-    border-radius: 15px;    
+        
 }
-@media (min-width: 1024.1px)and(max-width: 1324.1px) {
+/* si la pantalla mide mínimo 1024.1 px y máximo 1324.1 entonces... */
+@media (min-width: 1024.1px) and (max-width: 1324.1px) {
     aside div {
         flex-direction: column;
     }
