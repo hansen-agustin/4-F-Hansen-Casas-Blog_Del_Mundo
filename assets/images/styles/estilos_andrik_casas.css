@@ -1,62 +1,70 @@
 /* Clases generales */
-body{
+body {
     background-color: black;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     margin: 0;
 }
 
-@media (min-width: 1024.1px ) {
+@media (min-width: 1024.1px) {
     main {
         grid-column: span 8;
     }
 }
+
 main {
     grid-column: span 12;
 }
-@media (min-width: 1024.1px){
-    aside{
+
+@media (min-width: 1024.1px) {
+    aside {
         grid-column: span 4;
     }
 }
-aside{
+
+aside {
     grid-column: span 12;
 }
+
 @media (min-width: 1024.1px) {
     footer {
         grid-column: span 12;
     }
 }
+
 footer {
     grid-column: span 12;
 }
 
-article{
-    background-color:rgb(44, 43,43);
+article {
+    background-color: rgb(44, 43, 43);
     padding: 1.5 rem;
     border-bottom: rgb(255, 255, 255) 1px solid;
 }
 
-#titulo_del_blog{
+#titulo_del_blog {
     text-align: center;
     font-size: 3erm;
 }
+
 /* Terminan clases generales*/
 
 /* Empieza barras de navegación */
-.resaltado{
+.resaltado {
     color: yellow;
 }
 
 nav>ul>li {
     list-style: none;
 }
-a>li>ul>nav{
+
+a>li>ul>nav {
     text-decoration: none;
 }
+
 /* Termina barra de navegación */
 
 /* Footer del blog */
-#footer_blog{
+#footer_blog {
     display: flex;
     margin: 2rem;
     align-content: center;
@@ -65,24 +73,28 @@ a>li>ul>nav{
     padding: 0px 0px 0px 0px;
     font-size: 1.3rem;
 }
-#footer_blog div:nth-child(2){
+
+#footer_blog div:nth-child(2) {
     font-size: 0.9rem;
 }
+
 /* Fin del footer del blog */
 
 /* Ilustraciones */
-.ilustracion{
+.ilustracion {
     border: white 4px solid;
     display: inline-block;
 }
+
 .ilustracion figcaption {
     margin-top: 1rem;
     margin-left: 1rem;
     font-style: italic;
 }
+
 /* Fin de ilustraciones */
 /* grid */
-section{
+section {
     /* despliégate como grid */
     display: grid;
     /* Crea 12 columnas cada una de una fracción usando la función repeat*/
@@ -96,32 +108,42 @@ section{
 
 /* Termina grid */
 /* apunta sólo a los header que son hijos directos de section */
-section>header{
+section>header {
     /* esta sección se extenderá 12 columnas. */
     grid-column: span 12;
 }
-section>main{
+
+section>main {
     /* esta sección se extenderá 8 columnas. */
     grid-column: span 8;
 }
-section>aside{
+
+section>aside {
     /* esta sección se extenderá 4 columnas. */
     grid-column: span 4;
 }
-section>footer{
+
+section>footer {
     /* esta sección se extenderá 12 columnas. */
     grid-column: span 12;
 }
-nav{
+
+nav {
     font-size: 1.3rem;
     position: fixed;
 }
-nav>ul>li>a:hover{
+
+nav>ul>li>a:hover {
     text-decoration: underline;
     color: greenyellow;
 }
 
-nav>ul{
+nav>ul>li>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav>ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
@@ -131,7 +153,7 @@ nav>ul{
 }
 
 @media (min-width: 1100px) {
-    nav>ul{
+    nav>ul {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -140,33 +162,42 @@ nav>ul{
     }
 }
 
-article>header>hgroup{
+article>header>hgroup {
     display: flex;
     align-content: center;
     justify-content: space-between;
 }
-article>header>hgroup>h2{
+
+article>header>hgroup>h2 {
     display: flex;
     align-content: center;
 }
-article>header>hgroup>h2>img{
+
+article>header>hgroup>h2>img {
     margin-right: 1rem;
 }
-aside>h2{
+
+aside>h2 {
     align-content: center;
     font-size: 1.3rem;
 }
-aside>div:nth-of-type(even){
-    background-color: rgb(44, 43,43);
+
+aside>div:nth-of-type(even) {
+    background-color: rgb(44, 43, 43);
 }
-aside>div>img{
+
+aside>div>img {
     background-color: #fff;
     padding: 0.5rem;
     border-radius: 50%;
 }
-aside>div{
+
+aside>div {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.6rem;
     border: 1px dashed #fff;
     margin: 20px;
     border-radius: 15px;
@@ -179,6 +210,5 @@ aside>div{
 }
 
 head title {
-    width: min(2rem, 7rem)
-    font-size calc(1% + 2rem)
+    width: min(2rem, 7rem) font-size calc(1% + 2rem)
 }
