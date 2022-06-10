@@ -59,6 +59,7 @@ nav>ul>li {
 
 a>li>ul>nav {
     text-decoration: none;
+    color: #fff;
 }
 
 /* Termina barra de navegación */
@@ -95,6 +96,7 @@ a>li>ul>nav {
 /* Fin de ilustraciones */
 /* grid */
 section {
+
     /* despliégate como grid */
     display: grid;
     /* Crea 12 columnas cada una de una fracción usando la función repeat*/
@@ -129,11 +131,14 @@ section>footer {
 }
 
 nav {
+
     font-size: 1.3rem;
     position: fixed;
+
 }
 
 nav>ul>li>a:hover {
+
     text-decoration: underline;
     color: greenyellow;
 }
@@ -203,6 +208,7 @@ aside>div {
     border-radius: 15px;
 }
 
+/* si la pantalla mide mínimo 1024.1 px y máximo 1324.1 entonces... */
 @media (min-width: 1024.1px) and (max-width: 1324.1px) {
     aside div {
         flex-direction: column;
@@ -210,5 +216,6 @@ aside>div {
 }
 
 head title {
+
     width: min(2rem, 7rem) font-size calc(1% + 2rem)
 }
